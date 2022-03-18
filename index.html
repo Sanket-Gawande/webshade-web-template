@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width = device-width , initial-scale = 1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Webshade</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h2 class="logo">Web<span class="green">Shade</span></h2>
+        <ul class="menu">
+          <i class="fa fa-times" id="cancel-button" onclick="menutoggle()"></i>
+          <li style="--i: 1" class="active"><a href="">Home</a></li>
+          <li style="--i: 2"><a href="#">About</a></li>
+          <li style="--i: 3"><a href="#">Contact</a></li>
+          <li style="--i: 4"><a href="#services">Services</a></li>
+          <li style="--i: 5"><a href="#">Clients</a></li>
+        </ul>
+
+        <i class="fa fa-align-right" id="humberger" onclick="menutoggle()"></i>
+      </div>
+      <div class="header-hidden">I'm hidden .</div>
+      <div class="hero">
+        <h1 class="heading">We build for your future</h1>
+        <p>
+          <b>Web<span class="green">Shade</span></b> web services
+        </p>
+        <a class="button" href="#services"
+          >Services <i class="fa fa-suitcase"></i>
+        </a>
+      </div>
+    </div>
+    <h2 class="heading-srv">Our services</h2>
+    <div class="services" id="services">
+      <div class="services__service-box" data-aos="zoom-in-down">
+        <img class="service-box__img" src="img/maintenance.png" alt="" />
+        <h4 class="service-box__heading">Website maintenance</h4>
+        <p class="service-box__para">
+          We'll ensure that your website will be maintained free of cost for the
+          first 90 day
+        </p>
+      </div>
+      <div class="services__service-box" data-aos="zoom-in-down">
+        <img class="service-box__img" src="img/google.png" alt="" />
+        <h4 class="service-box__heading">Google's presence</h4>
+        <p class="service-box__para">
+          Maps, Search, Analytics we register you on every major Google platform
+        </p>
+      </div>
+      <div class="services__service-box" data-aos="zoom-in-down">
+        <img class="service-box__img" src="img/ecom.png" alt="" />
+        <h4 class="service-box__heading">E-commerce</h4>
+        <p class="service-box__para">
+          E-Commerce lets you sell products on your website.
+        </p>
+      </div>
+      <div class="services__service-box" data-aos="zoom-in-down">
+        <img class="service-box__img" src="img/responsive.png" alt="" />
+        <h4 class="service-box__heading">Responsive Design</h4>
+        <p class="service-box__para">
+          Your Website will scale properly on Phone, Tablet & Desktop
+        </p>
+      </div>
+    </div>
+    <div class="container_div">
+      <div class="container_box" data-aos="fade-up-left">
+        <img src="database.png" class="container_box_img" />
+        <div class="container_box_text_div">
+          <h4>Database</h4>
+          <p>
+            eum mea suspendisse sociosqu congue dicat diam posse quidam recteque
+            aliquip. ornatus erroribus facilis dis iriure. donec semper homero
+            saepe invidun
+          </p>
+        </div>
+      </div>
+      <div class="container_box" data-aos="fade-up-right">
+        <img src="dashboard.png" class="container_box_img" />
+        <div class="container_box_text_div">
+          <h4>Dashboard</h4>
+          <p>
+            Librisintellegebat salutatus dicunt error suscipit principes adhuc
+            vituperatoribus molestie possit vero homero. Ultriciesvoluptatibus
+            suscipiantur
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  <div class="client_div">
+        <h4>Our clients</h4>
+        <div class="clients_logo_div">
+
+        </div>
+    </div>  -->
+    <footer>
+        <h2 class="logo">Web<span class="green">Shade</span></h2>
+        <p>All rigths are reserved &copy; 2020-2021</p>
+    </footer>
+    <style type="text/css" media="all"></style>
+    <script>
+      function menutoggle() {
+        menu = document.querySelector(".menu");
+        menu.classList.toggle("menu-on-small-screen");
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
